@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080d19">
+<meta name="description" content="A home for Convex projects, products and experiments.">
+<title>Convex — Build what's next</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#080d19;--panel:#111b2c;--line:#25344b;--muted:#9aabc2;--white:#f5f8ff;--blue:#83aaff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 78% -8%,#263f70 0,transparent 34%),radial-gradient(ellipse at 0% 40%,#172b49 0,transparent 32%),var(--bg);color:var(--white);font-family:"DM Sans",system-ui,sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}
+.logo{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.5px;font-size:19px}.symbol{width:35px;height:35px;border-radius:11px;background:linear-gradient(145deg,#9dc0ff,#426bd1);display:grid;place-items:center;box-shadow:0 8px 26px #4776d455}.symbol svg{width:21px}
+.navright{font-size:13px;color:#b9c7da}.navright a:hover{color:white}
+.hero{padding:112px 0 86px;max-width:850px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #5b78aa66;background:#172944aa;border-radius:999px;padding:8px 13px;color:#c9d9f3;font-size:12px;letter-spacing:.4px}.pulse{width:7px;height:7px;border-radius:50%;background:#5de0ad;box-shadow:0 0 12px #5de0ad}
+h1{font-size:clamp(48px,8vw,86px);line-height:.99;letter-spacing:-5px;margin:28px 0 22px;font-weight:800}.shine{background:linear-gradient(100deg,#fff 10%,#a9c7ff 55%,#7de1d0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;line-height:1.75;color:#a9b8ce;max-width:620px;margin:0}.hero-actions{display:flex;gap:12px;margin-top:34px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:12px;font-weight:700;font-size:14px;border:1px solid #ffffff20;transition:.2s}.btn.primary{background:#eaf1ff;color:#101b2c;border-color:#eaf1ff}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px #0004}.btn.secondary{background:#ffffff08;color:#e1eafa}
+.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}.sectionhead h2{font-size:28px;letter-spacing:-1px;margin:0}.sectionhead p{color:var(--muted);font-size:13px;margin:0}
+.projects{padding:18px 0 100px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.project{position:relative;overflow:hidden;min-height:275px;padding:28px;border-radius:20px;border:1px solid var(--line);background:linear-gradient(145deg,#17263c,#101827 75%);display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}.project:hover{transform:translateY(-4px);border-color:#6e8fcb;box-shadow:0 18px 50px #0004}
+.project:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;right:-80px;top:-90px;background:var(--glow);filter:blur(2px);opacity:.2}
+.icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--iconbg);border:1px solid #ffffff1c;margin-bottom:24px;position:relative}.icon svg{width:24px;height:24px}
+.project h3{font-size:23px;letter-spacing:-.7px;margin:0 0 9px;position:relative}.project p{color:#a8b7cb;line-height:1.65;font-size:14px;margin:0 0 25px;max-width:440px;position:relative}.projectfoot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;position:relative}.tag{font-size:11px;color:#b9c9df;border:1px solid #ffffff20;border-radius:999px;padding:6px 9px}.arrow{width:34px;height:34px;border-radius:50%;background:#ffffff12;display:grid;place-items:center;font-size:17px}
+.about{border-top:1px solid #ffffff12;padding:30px 0 36px;color:#8192aa;font-size:12px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:700px){.hero{padding:82px 0 65px}h1{letter-spacing:-3px}.grid{grid-template-columns:1fr}.sectionhead{align-items:start;flex-direction:column}.project{min-height:250px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="logo" href="/" aria-label="Convex home"><span class="symbol"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18V6l8 7 8-7v12" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Convex</a><div class="navright"><a href="#projects">Explore projects&nbsp; ↘</a></div></nav>
+<header class="hero">
+<div class="eyebrow"><span class="pulse"></span> A home for ideas in motion</div>
+<h1>Build what's <span class="shine">next.</span></h1>
+<p class="lead">A collection of tools, experiments and digital projects built to make creating, sharing and working online a little better.</p>
+<div class="hero-actions"><a class="btn primary" href="#projects">Explore projects <span>↘</span></a><a class="btn secondary" href="https://github.com/AquaTheCanary">View on GitHub <span>↗</span></a></div>
+</header>
+<section class="projects" id="projects">
+<div class="sectionhead"><div><h2>Selected projects</h2></div><p>Two projects. More on the way.</p></div>
+<div class="grid">
+<a class="project" href="https://interactivestudio.abrdns.com" style="--glow:#527ee8;--iconbg:#213d70">
+<div class="icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="3" stroke="#a9c5ff" stroke-width="1.7"/><path d="M3 9h18M8 4v5" stroke="#a9c5ff" stroke-width="1.7"/><path d="m10 14 2 2 4-4" stroke="#a9c5ff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<h3>Interactive Studio</h3><p>Create presentations and websites with a flexible visual studio. Build, publish and share your ideas.</p><div class="projectfoot"><span class="tag">Presentations · Websites</span><span class="arrow">↗</span></div>
+</a>
+<a class="project" href="https://github.com/AquaTheCanary/cloudbase" style="--glow:#32c8bd;--iconbg:#174d50">
+<div class="icon"><svg viewBox="0 0 24 24" fill="none"><path d="M7.2 18.5h10.1a4.2 4.2 0 0 0 .5-8.4A6.1 6.1 0 0 0 6 9.2a4.7 4.7 0 0 0 1.2 9.3Z" stroke="#8ce9df" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 11v7m-2.5-2.5L12 18l2.5-2.5" stroke="#8ce9df" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<h3>Cloudbase</h3><p>Your cloud storage space, designed to make keeping and accessing your files simple.</p><div class="projectfoot"><span class="tag">Cloud storage</span><span class="arrow">↗</span></div>
+</a>
+</div>
+</section>
+<footer class="about"><span>© <span id="year"></span> Convex. Made with curiosity.</span><span>Ideas become things.</span></footer>
+</div>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
